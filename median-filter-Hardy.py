@@ -3,6 +3,8 @@ load in 9 images
 save 9 pixels, one pixel from each
 use one channel to get median
 rewrite that pixel into new image
+
+Updated comment for github test
 '''
 from PIL import Image
 
