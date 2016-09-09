@@ -4,7 +4,8 @@ save 9 pixels, one pixel from each
 use one channel to get median
 rewrite that pixel into new image
 
-Updated comment for github test
+Github link
+https://github.com/nigelhardy/cst205-proj1
 '''
 from PIL import Image
 
@@ -41,5 +42,6 @@ for x in range(0, imageList[0].size[0]):
 			pixValues[z] = pixel(r,g,b) #store pixel for sorting
 		pixValues.sort(key = lambda x: x.r) #sort by red channel
 		newImage.putpixel((x,y),(pixValues[4].r, pixValues[4].g, pixValues[4].b)) #put median pixel into new image
-
+print("Done!")
+newImage.show()
 newImage.save("Project1Images/medianFilteredImage.png") #save new image
